@@ -1,0 +1,135 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.2 (25/3/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+% and Ryad0m (m.ryadom@gmail.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same
+% directory as this .tex file. These files provide the resume style and themes
+% used for structuring the document.
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,a4paper,sans]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{casual} % CV theme - options include: 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{blue} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+%\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Mark} % Your first name
+\familyname{Riabov} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+%\title{Software engineer}
+%\address{123 Broadway}{City, State 12345}
+%\mobile{+44}
+%\phone{(000) 111 1112}
+%\fax{(000) 111 1113}
+\email{m.ryadom@gmail.com}
+%\homepage{staff.org.edu/~jsmith}{staff.org.edu/$\sim$jsmith} % The first argument is the url for the clickable link, the second argument is the url displayed in the template - this allows special characters to be displayed such as the tilde in this example
+%\extrainfo{additional information}
+%\photo[70pt][0.4pt]{pictures/picture} % The first bracket is the picture height, the second is the thickness of the frame around the picture (0pt for no frame)
+%\quote{"A witty and playful quotation" - John Smith}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cventry{09.2017 -- 06.2019 }{Masters Applied mathematics and
+Computer science}{Moscow Institute of Physics and Technology (State University)}{Moscow}{}{Graduate work: Generation diverse hypothesis in maching translations.}
+\cventry{09.2013 -- 06.2017 }{Bachelor Applied mathematics and
+Computer science}{Moscow Institute of Physics and Technology (State University)}{Moscow}{}{Graduate work: Reinforcement learning in continuous or high dimension structured action spaces.}
+\cventry{09.2012 -- 06.2013}{School}{AESC Moscow State university}{Moscow}{}{I was awarded by medal of Merit of the school.}
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Experience}
+
+\cventry{07.2018 -- Present}{Software engineer}{\textsc{Google}}{London}{}{Google Play team.}
+\cventry{05.2017 -- 06.2018}{Software engineer}{\textsc{Yandex}}{Moscow}{}{AB experiments team, working with high load services that collect and analyse logs (C++) and some internal instruments (web sites on python, django)}
+\cventry{03.2017 -- 06.2018}{Practical Lecturer}{Moscow Institute of Physics and Technology (State University)}{Moscow}{}{Python classes, Machine learning classes, Deep learning (\href{http://ml-mipt.github.io/}{ml-mipt.github.io})}
+\cventry{11.2016 -- 05.2017}{Software engineer intern}{\textsc{Yandex}}{Moscow}{}{}
+\cventry{07.2016 -- 09.2016}{Software engineer intern}{\textsc{Google}}{Zurich}{}{}
+\cventry{09.2015 -- 05.2016}{Teacher}{\textsc{1C}}{Moscow}{}{I teach children programming on Java. 1 day per week}
+\cventry{09.2013, 09.2014, 08.2015, 09.2017}{Teacher}{\textsc{Summer Informatics School}}{Moscow}{}{It is summer school for children, where I taught them programming and algorithms.}
+\cventry{06.2014 -- 05.2015}{Teacher}{\textsc{Moscow school 179}}{Moscow}{}{I teach programming on Python 1 day per week in school.}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Awards}
+
+\cventry{2017}{HackUPC}{}{}{}{\href{https://devpost.com/software/barney}{Winner "Scyscanner challenge"}. People tour recommendation system. Backend and recommendation system.}
+\cventry{2017}{AngelHack 2017 Moscow}{}{}{}{Winner. App for outfit recommendations. }
+\cventry{2017}{CopenHack 2017}{}{}{}{\href{https://devpost.com/software/stop-sti-0cvw2k}{Winner "Secret Prize"}App for preventing STI. I made backend on python, django.}
+\cventry{2017}{Google Hash Code}{}{}{}{19'th place in finals}
+\cventry{2017}{HackUPC}{}{}{}{\href{https://devpost.com/software/barney}{Winner "Best Use of AWS"}. App with intelligent tips for communications. I made backend on python, django.}
+\cventry{2016}{Skinhack}{}{}{}{Machine learning competition. 2'nd place. Face wrinkles recognition.}
+\cventry{2016}{Yandex data night}{}{}{}{Machine learning competition. 5'nd place. Taxi oredrs prediction.}
+\cventry{2013, 2014}{ACM ICPC}{}{}{}{I took part in quarterfinal in 2014. And I took part in semifinal in 2013.}
+\cventry{2012, 2013}{Russian informatics olympiad}{}{}{}{I became a winner in Russian informatics olympiad in 2013.
+I was awarded a bounty of Russian President twice.}
+
+\section{Certificates}
+\cventry{2017-2019}{Yandex school of data analysis}{}{}{}{Completed 13 courses from data analysis track.}
+
+
+\section{Computer skills}
+
+\cvitem{Skills}{\textsc{C++}, \textsc{Python}, \textsc{Java}, Algorithms, \textsc{Django}, Machine learning, Data science, Linux, Microsoft Windows, High load, Postgresql}
+
+%----------------------------------------------------------------------------------------
+%	LANGUAGES SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Languages}
+
+\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+\cvlistdoubleitem{English}{Russian}
+
+%----------------------------------------------------------------------------------------
+%	INTERESTS SECTION
+%----------------------------------------------------------------------------------------
+
+%\section{Interests}
+
+%\cvlistdoubleitem{Music}{Dancing}
+%\cvlistdoubleitem{Robotics}{Frisbee}
+
+
+\end{document}
