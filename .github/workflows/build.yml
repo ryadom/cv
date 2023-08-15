@@ -12,3 +12,8 @@ jobs:
         uses: dante-ev/latex-action@latest
         with:
           root_file: src/cv.tex
+      - name: Release
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            cv.pdf
